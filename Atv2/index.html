@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+  <form> 
+    <h2>Preencha o formulário</h2>
+    <fieldset>
+        <legend>Crie sua conta</legend>
+
+        <label for="nome">Nome:</label>
+    <input type="text" name="name" id="name" required> 
+
+        <label for="email">Email:</label>
+    <input type="email" placeholder="seuemail@gmail.com" name="email" id="email" required>
+
+        <label for="senha">Senha (Mínimo 8 caracteres):</label>
+    <input type="password" placeholder="Senha" name="senha" id="senha" minlength="8" required>
+
+    <h3>Gênero:</h3>
+
+    <input type="radio" name="Gênero" id="Feminino" required>
+    <label for="text">Feminino</label>      
+
+    <input type="radio" name="Gênero" id="Masculino" required>
+    <label for="text">Masculino</label> 
+
+    <h3>Biografia:</h3>
+    <textarea for="text" id="Biografia" placeholder="Fale um pouco sobre você..." required rows="5"></textarea><br>
+ 
+    <input type="checkbox" required>
+    <label for="text">Eu li e os termos de serviço.</label><br>
+
+     </fieldset>
+     
+    <br><input type="submit" value="Cadastrar" required>  
+    <input type="reset" value="Limpar" required>  
+
+  </form>  
+</body>
+</html>
