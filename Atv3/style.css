@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color: rgb(243, 185, 134);
+     /* background-color: #796969; */
+}
+
+.card {
+max-width: 1000px;
+margin: 10px auto;
+padding: 30px;
+border: 1.5px solid #e66815;
+}
+
+header{
+ margin: 10px 450px;
+ color: #c2713b;
+ font-size: 25;
+}
+
+h2 {
+    font-size: 45px;
+    color: #e66815;
+}
+   
+nav ul li a {
+    text-decoration: none;
+    color: #e66815;
+    margin: 580px;
+}
+
+nav ul li a:hover{
+    background-color: #e07b3736;
+    cursor: pointer;
+    text-decoration: underline #e66815;
+}
