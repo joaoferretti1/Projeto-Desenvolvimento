@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 95px 1fr 70px;
+    background-color: rgb(167, 167, 167);
+}
+
+header{
+    grid-column: 1/3;
+    grid-row: 1;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(54, 53, 52);
+    color: rgb(255, 115, 1); ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: rgb(167, 167, 167);
+    padding: 10px;
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: rgba(145, 143, 142, 0.281);
+}
+
+main{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(54, 53, 52);
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.664);
+}
+
+h2{
+    color:rgb(36, 35, 34);
+    text-align: center;
+    font-size: 30px;
+}
+
+time{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(54, 53, 52);
+}
+
+h2~p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.664);
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    color:rgb(36, 35, 34);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    grid-column: 1/3;
+    grid-row: 3;
+    background-color: rgb(54, 53, 52); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 95px 1fr 1fr 70px;
+    }
+
+    aside{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    footer{
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
