@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(175, 173, 170);
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+ul {
+  width: 275px;
+  margin: 20px auto;
+}
+
+li {
+  padding: 10px;
+  background-color: #e8e8e8;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
